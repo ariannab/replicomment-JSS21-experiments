@@ -16,7 +16,7 @@ To download the subjects we use in our evaluation, the script runs `get_evaluati
 uses `curl` to download everything. If this doesn't work for you, change it into `wget`, or whathever your OS pefers.
 
 
-## Output interpretation
+## Output interpretation: RepliComment
 RepliComment outputs are divided by _subject_ and _context_ of clone search. We do not output all the clones found for subject into a single file for the sake of better clarity (but if you prefer to change this behaviour, feel free to edit the source code!).
 
 RepliComment 2.0 as explained in the JSS paper works by looking for clones found at different contexts, namely inside the same class, or among hierarchies of classes, or among all classes of a project (and all of these at method-level and then field-level). All these different searches were added for the JSS publication, so we consider the default RepliComment behaviour as the original ICPC one: An analysis within one same class of method-level comment clones. 
@@ -26,3 +26,13 @@ Considering for example the subject Apache Lucene, we will have the following ou
 - `2020_JavadocClones_cf_lucene.csv` method-level, cross-file (multiple classes) context
 - `2020_JavadocClones_h_lucene.csv` method-level, hierarchy-context
 - `2020_JavadocClones_fields_*` field-level, `*`-contexts same as above
+
+## Output interpretation: upDoc
+
+`upDoc` or, if you want, the Clone Analyzer (i.e. the last component of our pipeline), will produce `.txt` reports under `JSS-outputs`. Their content should be self-explainatory. Specifically, you will see the following files:
+* pc_high_severity.txt -- cloned comment parts that represent a HIGH severity issue (copy&paste)
+* pc_low_severity.txt  -- cloned comment parts that represent a LOW severity issue (likely false positives)
+* pc_mild_severity.txt -- cloned comment parts that represent a MILD severity issue (poor info)
+* wc_high_severity.txt -- cloned whole comments that represent a HIGH severity issue (unrelated methods)
+* wc_mild_severity.txt -- cloned whole comments that represent a MILD severity issue (e.g., overridden methods)
+* special_issues.txt   -- general issues affecting the comments (e.g., wrong parameter names)
