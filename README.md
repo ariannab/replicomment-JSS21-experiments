@@ -22,7 +22,7 @@ RepliComment outputs are divided by _subject_ and _context_ of clone search. We 
 RepliComment 2.0 as explained in the JSS paper works by looking for clones found at different contexts, namely inside the same class, or among hierarchies of classes, or among all classes of a project (and all of these at method-level and then field-level). All these different searches were added for the JSS publication, so we consider the default RepliComment behaviour as the original ICPC one: An analysis within one same class of method-level comment clones. 
 
 Considering for example the subject Apache Lucene, we will have the following outputs:
-`2020_JavadocClones_lucene.csv` the default analysis (method-level, single-class context)
-`2020_JavadocClones_cf_lucene.csv` method-level, cross-file (multiple classes) context
-`2020_JavadocClones_h_lucene.csv` method-level, hierarchy-context
-`2020_JavadocClones_fields_*` field-level, `*`-contexts same as above
+- `2020_JavadocClones_lucene.csv` the default analysis (method-level, single-class context)
+- `2020_JavadocClones_cf_lucene.csv` method-level, cross-file (multiple classes) context
+- `2020_JavadocClones_h_lucene.csv` method-level, hierarchy-context
+- `2020_JavadocClones_fields_*` field-level, `*`-contexts same as above
