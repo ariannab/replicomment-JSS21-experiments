@@ -12,8 +12,9 @@ The repo as you clone it will only contain two bash scripts and this README. Aft
 2. RepliComment 2.0 repository (and RepliComment outputs after executing it)
 3. upDoc  1.0 repository (and upDoc outputs after executing it)
 
-To download the subjects we use in our evaluation, the script runs `get_evaluation_project_sources.bash first`. **Notice that** The script
-uses `curl` to download everything. If this doesn't work for you, change it into `wget`, or whathever your OS pefers.
+To download the subjects we use in our evaluation, the script runs `get_evaluation_project_sources.bash` first. 
+
+**Notice that** these scripts use `curl` to download everything. If this doesn't work for you, change it into `wget`, or whatever your OS pefers.
 
 
 ## Output interpretation: RepliComment
