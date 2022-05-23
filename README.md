@@ -3,6 +3,8 @@
 Arianna Blasi, Nataliia Stulova, Alessandra Gorla, Oscar Nierstrasz, _RepliComment: Identifying clones in code comments_,
 Journal of Systems and Software Volume 182, 2021, https://doi.org/10.1016/j.jss.2021.111069.
 
+<a href="https://zenodo.org/badge/latestdoi/492555053"><img src="https://zenodo.org/badge/492555053.svg" alt="DOI"></a>
+
 ## Repo structure
 RepliComment works in tandem with upDoc, the short paper published at SCAM 2020. upDoc is what we call
 "Clone Analyzer" in the paper: It makes the final assessments on the comment clones RepliComment fetches and filters.
