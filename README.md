@@ -7,10 +7,12 @@ Journal of Systems and Software Volume 182, 2021, https://doi.org/10.1016/j.jss.
 RepliComment works in tandem with upDoc, the short paper published at SCAM 2020. upDoc is what we call
 "Clone Analyzer" in the paper: It makes the final assessments on the comment clones RepliComment fetches and filters.
 
-The repo as you clone it will only contain two bash scripts and this README. After you launch the `execute-full-JSS-pipeline` script, you obtain:
+👉 _The full source of the clone analyzer is available here:_ https://github.com/s0nata/updoc/tree/replicomment-integration
+
+This repo as you clone it will only contain two bash scripts and this README. After you launch the `execute-full-JSS-pipeline` script, you obtain:
 1. The subjects the experiments involves (their sources and executable `.jar`)
 2. RepliComment 2.0 repository (and RepliComment outputs after executing it)
-3. upDoc  1.0 repository (and upDoc outputs after executing it)
+3. upDoc  1.0 executable (and upDoc outputs after executing it) (you may also edit the script to clone&build from the sources 👆)
 
 To download the subjects we use in our evaluation, the script runs `get_evaluation_project_sources.bash` first. 
 
